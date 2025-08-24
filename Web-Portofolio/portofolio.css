@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #f5f5f5;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation */
+nav {
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-container h3 {
+    color: #2980b9;
+    font-size: 1.4rem;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: #2980b9;
+}
+
+/* Header Section */
+.header {
+    background: linear-gradient(135deg, #3498db, #2ecc71);
+    color: white;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.foto-profil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin: 0 auto 20px;
+    object-fit: cover; /* Mencegah gambar menjadi gepeng */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Menambah bayangan */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi halus */
+}
+
+.foto-profil:hover {
+    transform: scale(1.08); /* Sedikit membesar saat disentuh mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25); /* Bayangan lebih jelas saat disentuh */
+}
+
+.header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.2rem;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+.tombol {
+    display: inline-block;
+    background: white;
+    color: #2980b9;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.tombol:hover {
+    background: #f8f8f8;
+}
+
+/* Section umum */
+section {
+    padding: 50px 0;
+}
+
+.kotak-putih {
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2980b9;
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+/* About section */
+.isi-tentang {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+}
+
+.teks-tentang p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+/* Identitas Diri */
+.identitas-diri {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 8px;
+    border-left: 4px solid #3498db;
+}
+
+.identitas-diri h3 {
+    color: #2980b9;
+    margin-bottom: 15px;
+}
+
+.info-identitas {
+    display: grid;
+    gap: 10px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    font-weight: 600;
+    color: #495057;
+}
+
+.info-value {
+    color: #666;
+}
+
+/* Education section */
+.item-pendidikan {
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2980b9;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 5px;
+}
+
+.tahun {
+    color: #3498db;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+.item-pendidikan h3 {
+    margin-bottom: 8px;
+}
+
+.item-pendidikan p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Skill section */
+.grid-skill {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+.kartu-skill {
+    background: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+.kartu-skill:hover {
+    background: #f9f9f9;
+}
+
+.icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.kartu-skill ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.kartu-skill li {
+    background: #f1f2f6;
+    margin: 8px 0;
+    padding: 8px;
+    border-radius: 4px;
+    border-left: 3px solid #74b9ff;
+}
+
+/* Project section */
+.project-list {
+    display: grid;
+    gap: 20px;
+}
+
+.project-item {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    border-left: 4px solid #2980b9;
+}
+
+.project-item:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+}
+
+.project-header {
+    margin-bottom: 15px;
+}
+
+.project-header h3 {
+    margin: 0;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+.project-context {
+    background: #e8f4fd;
+    color: #1976d2;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.project-description {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Contact section */
+.bagian-kontak {
+    background: linear-gradient(135deg, #74b9ff, #00cec9);
+    color: white;
+}
+
+.bagian-kontak h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.grid-kontak {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.item-kontak {
+    background: rgba(255,255,255,0.1);
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.item-kontak:hover {
+    background: rgba(255,255,255,0.2);
+}
+
+.item-kontak .icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.item-kontak h3 {
+    color: white;
+    margin-bottom: 8px;
+}
+
+.item-kontak a {
+    color: white;
+    text-decoration: none;
+    opacity: 0.9;
+}
+
+.item-kontak a:hover {
+    opacity: 1;
+}
+
+/* Footer */
+footer {
+    background: #34495e;
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+footer p {
+    opacity: 0.8;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .isi-tentang {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .grid-skill {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .kotak-putih {
+        padding: 25px;
+    }
+    
+    section {
+        padding: 35px 0;
+    }
+
+    .project-context {
+        margin-top: 8px;
+        display: block;
+        width: fit-content;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 60px 0;
+    }
+    
+    .foto-profil {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .header h1 {
+        font-size: 1.6rem;
+    }
+    
+    .grid-kontak {
+        grid-template-columns: 1fr;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+}
