@@ -2,7 +2,7 @@
 
 Sebuah halaman portofolio sederhana dan responsif yang dibuat dengan **HTML** dan **CSS**. Proyek ini berisi profil singkat, pendidikan, keahlian, proyek, dan kontak. 
 
-> Dibuat sebagai bagian dari pembelajaran *Responsive Web Design* (freeCodeCamp) dan tugas Proyek 3 kampus.
+> Dibuat untuk memenuhi tugas Proyek 3 dan hasil dari mempelajari html css dari hypersheets, freecodecamp, dan w3school. 
 
 ---
 
